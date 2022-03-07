@@ -4,6 +4,8 @@ import { NavComponent } from './nav/nav.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardModule } from '../dashboard/dashboard.module';
+import { DashboardRoutingModule } from './dashboard/dashboard-routing.module';
 
 
 
@@ -15,7 +17,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DashboardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DashboardModule,
+    DashboardRoutingModule
   ],
   exports:[
     NavComponent,
